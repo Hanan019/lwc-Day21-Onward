@@ -1,0 +1,9 @@
+<template>
+  <lightning-card title="RenderList on Array" icon-name="custom:custom14">
+    <div class="slds-var-p-around_small">
+      <template for:each={superHeros} for:item="SuperHero">
+        <p key={SuperHero}>{SuperHero}</p>
+      </template>
+    </div>
+  </lightning-card>
+</template>
