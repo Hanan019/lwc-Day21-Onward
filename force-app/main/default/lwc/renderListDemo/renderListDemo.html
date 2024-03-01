@@ -6,4 +6,14 @@
       </template>
     </div>
   </lightning-card>
+  <lightning-card
+    title="Rendering the Contact Array List"
+    icon-name="custom:custom14"
+  >
+    <div class="slds-var-p-around_small">
+      <template for:each={contactList} for:item="Contact">
+        <p key={Contact.id}>{Contact.firstName} {Contact.lastName}</p>
+      </template>
+    </div>
+  </lightning-card>
 </template>
